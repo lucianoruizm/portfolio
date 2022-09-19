@@ -1,6 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39&family=Libre+Barcode+39+Extended+Text&family=Open+Sans&family=Poppins&family=Roboto&display=swap');
+
 body {
     margin: 0;
     background-color: lightgrey;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --main-color: white;
+}
+
+a {
+    text-decoration: none;
 }
 
 .bg {
@@ -8,15 +20,51 @@ body {
     padding: 10px;
     height: 100vh;
     background-size: cover;
+    box-sizing: border-box;
+    filter: blur(3px);
+}
+
+.bg-text {
+    color: var(--main-color);
+    font-weight: bold;
+    border: 3px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .home {
-    background-image: ;
+    background-image: url(./images/bgImage.jpg);
+}
+
+.custom-section {
+    padding-top: 30px;
+}
+
+.cb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.img-fluid {
+    cursor: pointer;
+}
+
+.card-text {
+    font-family: 'Roboto', sans-serif;
 }
 
 footer {
     background-color: black;
     padding: 20px 0;
-    color: white;
+    color: var(--main-color);
     margin-top: 40px;
 }
