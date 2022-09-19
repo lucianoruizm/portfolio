@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    background-color: lightgrey;
+}
+
+.bg {
+    text-align: center;
+    padding: 10px;
+    height: 100vh;
+    background-size: cover;
+}
+
+.home {
+    background-image: ;
+}
+
+footer {
+    background-color: black;
+    padding: 20px 0;
+    color: white;
+    margin-top: 40px;
+}
