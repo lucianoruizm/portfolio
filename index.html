@@ -34,6 +34,9 @@
                         <a class="nav-link" href="#projects">My projects</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#skillset">Skillset</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -45,12 +48,13 @@
         <h1>Luciano Ruiz Moreno</h1>
     </div>
     <div class="custom-container">
+        <h3>Projects</h3>
         <section class="container custom-section" id="projects">
             <div class="row">
                 <div
                   class="col-md"
-                  data-aos="fade-up"
-                  data-aos-offset="350"
+                  data-aos="fade-left"
+                  data-aos-offset="200"
                   data-aos-duration="500"
                 >
                   <img src="./images/01project.png" class="img-fluid custom-img" alt="...">
@@ -100,11 +104,37 @@
             </div>
         </section>
     </div>
-    <section class="skills">
-        grid
+    <section id="skillset" class="skillset">
+        <h3>Skillset</h3>
+        <div>
+            <div>
+                <img src="./images/htmlLogo.svg" alt="html" data-toggle="tooltip" title="HTML">
+            </div>
+            <div>
+                <img src="./images/htmlLogo.svg" alt="css" data-toggle="tooltip" title="CSS">
+            </div>
+            <div>
+                <img src="./images/htmlLogo.svg" alt="javascript" data-toggle="tooltip" title="Javascript">
+            </div>
+            <div>
+                <img src="./images/htmlLogo.svg" alt="git" data-toggle="tooltip" title="GIT">
+            </div>
+            <div>
+                <img src="./images/htmlLogo.svg" alt="npm" data-toggle="tooltip" title="npm">
+            </div>
+            <div>
+                <img src="./images/htmlLogo.svg" alt="bash" data-toggle="tooltip" title="bash">   
+            </div>
+            <div>
+                <img src="./images/htmlLogo.svg" alt="node.js" data-toggle="tooltip" title="Node.js">               
+            </div>
+            <div>
+                <img src="./images/htmlLogo.svg" alt="react" data-toggle="tooltip" title="React">       
+            </div>
+        </div>
     </section>
     <section class="contact" id="contact">
-        Contact
+        <h3>Contact</h3>
     </section>
     <footer>
         <div class="container">
@@ -113,6 +143,11 @@
             </p>
         </div>
     </footer>
+    <script>
+        $(document).ready(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

@@ -1,19 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Barcode+39&family=Libre+Barcode+39+Extended+Text&family=Open+Sans&family=Poppins&family=Roboto&display=swap');
 
+:root {
+    --main-color: #f1f1f1;
+    --bs-dark: #212529;
+}
+
 body {
     margin: 0;
     background-color: lightgrey;
+    font-size: 18px;
     font-family: 'Open Sans', sans-serif;
-}
-
-:root {
-    --main-color: white;
-    --bs-dark: #212529;
 }
 
 a {
     text-decoration: none;
+}
+
+h2, h3, h4 {
+    letter-spacing: .3rem;
+}
+
+h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
 }
 
 .bg {
@@ -51,6 +62,12 @@ a {
     gap: 20px;
 }
 
+section {
+    margin: 10px;
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+
 .custom-section {
     background-color: #dad8d8;
 }
@@ -72,6 +89,27 @@ a {
 
 .card-text {
     font-family: 'Roboto', sans-serif;
+}
+
+#skillset>div {
+    grid-gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 1rem;
+}
+
+#skillset>div>div {
+    position: relative;
+}
+
+#skillset img {
+    border-radius: 1rem;
+    cursor: context-menu;
+    max-width: 7rem;
+}
+
+span {
+    font-size: 1rem;
 }
 
 footer {
