@@ -9,6 +9,7 @@ body {
 
 :root {
     --main-color: white;
+    --bs-dark: #212529;
 }
 
 a {
@@ -43,8 +44,19 @@ a {
     background-image: url(./images/bgImage.jpg);
 }
 
+.custom-container {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .custom-section {
-    padding-top: 30px;
+    background-color: #dad8d8;
+}
+
+.custom-img {
+    margin: 0;
 }
 
 .cb {
@@ -63,7 +75,7 @@ a {
 }
 
 footer {
-    background-color: black;
+    background-color: rgba(var(--bs-dark-rgb), 1);
     padding: 20px 0;
     color: var(--main-color);
     margin-top: 40px;
