@@ -68,8 +68,16 @@ section {
     padding-top: 3rem;
 }
 
+.container.custom-section {
+    padding: 0;
+}
+
 .custom-section {
     background-color: #dad8d8;
+}
+
+.img-container {
+    display: flex;
 }
 
 .custom-img {
@@ -81,6 +89,7 @@ section {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 20px;
 }
 
 .img-fluid {
