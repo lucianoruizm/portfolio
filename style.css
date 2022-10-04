@@ -25,15 +25,20 @@ h3 {
     text-align: center;
     text-transform: uppercase;
     font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+.navbar-container {
+    max-width: 100%;
 }
 
 .bg {
     text-align: center;
     padding: 10px;
-    height: 100vh;
+    height: 90vh;
     background-size: cover;
     box-sizing: border-box;
-    filter: blur(3px);
+    filter: blur(2px);
 }
 
 .bg-text {
@@ -80,10 +85,6 @@ section {
     display: flex;
 }
 
-.custom-img {
-    margin: 0;
-}
-
 .cb {
     display: flex;
     align-items: center;
@@ -109,6 +110,8 @@ section {
 
 #skillset>div>div {
     position: relative;
+    display: flex;
+    justify-content: center;
 }
 
 #skillset img {
@@ -126,4 +129,27 @@ footer {
     padding: 20px 0;
     color: var(--main-color);
     margin-top: 40px;
+}
+
+@media (max-width: 768px){
+    .custom-section {
+        width: 60%;
+    }
+    .img-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .img-fluid {
+        width: 100%;
+    }
+    .cb {
+        width: 90%;
+        font-size: 14px;
+    }
+    #skillset>div {
+        grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
+    }
+    .bg-text {
+        top: 60%;
+    }
 }
