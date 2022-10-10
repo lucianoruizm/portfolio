@@ -28,6 +28,10 @@ h3 {
     margin-bottom: 30px;
 }
 
+p{
+    padding: 0 10px;
+}
+
 .navbar-container {
     max-width: 100%;
 }
@@ -73,27 +77,28 @@ section {
     padding-top: 3rem;
 }
 
-.container.custom-section {
+.custom-section {
     padding: 0;
 }
 
-.custom-section {
-    background-color: #dad8d8;
-}
-
-.img-container {
+.card-container {
     display: flex;
+    flex-direction: column;
+    width: 90%;
+    background-color: #dad8d8;
+    margin: auto;
 }
 
 .cb {
     display: flex;
+    text-align: justify;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 20px;
+    margin: 15px;
 }
 
-.img-fluid {
+.img-project {
     cursor: pointer;
 }
 
@@ -132,24 +137,7 @@ footer {
 }
 
 @media (max-width: 768px){
-    .custom-section {
-        width: 60%;
-    }
-    .img-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .img-fluid {
-        width: 100%;
-    }
-    .cb {
-        width: 90%;
-        font-size: 14px;
-    }
     #skillset>div {
         grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
-    }
-    .bg-text {
-        top: 60%;
     }
 }
