@@ -29,6 +29,7 @@ h3 {
 }
 
 p{
+    font-size: 1rem;
     padding: 0 10px;
 }
 
@@ -68,7 +69,6 @@ p{
     padding-top: 50px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
 }
 
 section {
@@ -84,9 +84,10 @@ section {
 .card-container {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    max-width: 80%;
     background-color: #dad8d8;
-    margin: auto;
+    margin: 20px auto;
+    border-radius: 10px;
 }
 
 .cb {
@@ -100,6 +101,7 @@ section {
 
 .img-project {
     cursor: pointer;
+    border-radius: 10px 10px 0 0;
 }
 
 .card-text {
@@ -129,11 +131,46 @@ span {
     font-size: 1rem;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact a:hover{
+    color: #2580db;
+}
+
 footer {
     background-color: rgba(var(--bs-dark-rgb), 1);
     padding: 20px 0;
     color: var(--main-color);
     margin-top: 40px;
+}
+
+@media (min-width: 500px){
+    .card-container {
+        max-width: 60%;
+    }
+}
+
+@media (min-width: 768px){
+    .card-container {
+        max-width: 45%;
+    }
+    .img-project{
+        height: 330px;
+    }
+}
+
+@media (min-width: 992px){
+    .card-container {
+        max-width: 30%;
+        margin: 0 auto;
+    }
+    .custom-section {
+        display: flex;
+        flex-direction: row;
+    }
 }
 
 @media (max-width: 768px){
