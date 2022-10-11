@@ -15,6 +15,7 @@ body {
 
 a {
     text-decoration: none;
+    color: var(--bs-dark);
 }
 
 h2, h3, h4 {
@@ -90,6 +91,14 @@ section {
     border-radius: 10px;
 }
 
+.card-container a {
+    color: #2580db;
+    transition: 0.3s;
+}
+.card-container a:hover {
+    color: #464747;
+}
+
 .cb {
     display: flex;
     text-align: justify;
@@ -138,6 +147,25 @@ span {
 }
 .contact a:hover{
     color: #2580db;
+}
+
+.social-networks{
+    display: flex;
+    margin-top: 15px;
+    gap: 25px;
+}
+
+.fa-twitter {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.fa-twitter:hover {
+    color: #2580db;
+}
+
+.fa-brands, .fab {
+    font-size: 3em;
 }
 
 footer {
