@@ -138,6 +138,10 @@ section {
     max-width: 7rem;
 }
 
+.img-item {
+    cursor: pointer;
+}
+
 span {
     font-size: 1rem;
 }
