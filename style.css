@@ -22,6 +22,12 @@ h2, h3, h4 {
     letter-spacing: .3rem;
 }
 
+h2 {
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 20px auto;
+}
+
 h3 {
     text-align: center;
     text-transform: uppercase;
