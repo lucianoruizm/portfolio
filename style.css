@@ -22,12 +22,6 @@ h2, h3, h4 {
     letter-spacing: .3rem;
 }
 
-h2 {
-    font-size: 1.3rem;
-    text-align: center;
-    margin: 20px auto;
-}
-
 h3 {
     text-align: center;
     text-transform: uppercase;
@@ -187,14 +181,9 @@ footer {
     margin-top: 40px;
 }
 
-@media (min-width: 992px){
+@media (min-width: 500px){
     .card-container {
-        max-width: 30%;
-        margin: 0 auto;
-    }
-    .custom-section {
-        display: flex;
-        flex-direction: row;
+        max-width: 60%;
     }
 }
 
@@ -207,21 +196,19 @@ footer {
     }
 }
 
-@media (min-width: 500px){
+@media (min-width: 992px){
     .card-container {
-        max-width: 60%;
+        max-width: 30%;
+        margin: 0 auto;
+    }
+    .custom-section {
+        display: flex;
+        flex-direction: row;
     }
 }
-
 
 @media (max-width: 768px){
     #skillset>div {
         grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
-    }
-}
-
-@media (max-width: 500px){
-    .bg-text {
-        top: 70%;
     }
 }
