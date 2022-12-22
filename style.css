@@ -4,6 +4,7 @@
 :root {
     --main-color: #f1f1f1;
     --bs-dark: #212529;
+    --bs-dark-grey: #353738;
 }
 
 body {
@@ -45,7 +46,69 @@ p{
     height: 48px;
     padding: 10px 15px;
     color: white;
-    z-index: 999;
+    position: relative;
+    transition: 250ms;
+}
+
+.checkbox, .icons {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.icons {
+    pointer-events: none;
+    font-size: 24px;
+}
+
+.checkbox {
+    opacity: 0;
+}
+
+.fi-sr-cross {
+    display: none;
+}
+
+.checkbox:checked ~ .fi-rr-menu-burger {
+    display: none;
+}
+
+.checkbox:checked ~ .fi-sr-cross {
+    display: block;
+}
+
+.menu {
+    width: 200px;
+    padding-left: 0;
+    position: absolute;
+    top: -140px;
+    right: 0;
+    z-index: -1;
+    transition: 250ms;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu li a {
+    text-align: left;
+    background-color: var(--bs-dark);
+    display: block;
+    padding: 10px 12px;
+}
+
+.menu li a:hover {
+    background-color: var(--bs-dark-grey);
+    color: white;
+}
+
+.checkbox:checked ~ .menu {
+    top: 48px;
+    z-index: 1;
 }
 
 .bg {
@@ -53,8 +116,7 @@ p{
     padding: 10px;
     height: 90vh;
     background-size: cover;
-    box-sizing: border-box;
-    filter: blur(2px);
+    filter: blur(1px);
 }
 
 .bg-text {
@@ -75,6 +137,8 @@ p{
 
 .home {
     background-image: url(./images/bgImage.jpg);
+    position: relative;
+    z-index: -2;
 }
 
 .custom-container {
@@ -109,7 +173,6 @@ section {
 .card-container a:hover {
     color: #464747;
 }
-
 
 .cb {
     display: flex;
@@ -210,7 +273,7 @@ footer {
     }
 }
 
-@media (min-width: 992px){
+@media (min-width: 1024px){
     .card-container {
         max-width: 30%;
         margin: 0 auto;
@@ -219,25 +282,24 @@ footer {
         display: flex;
         flex-direction: row;
     }
+    .checkbox, .fi-rr-menu-burger, .fi-sr-cross {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        top: 0;
+        right: 500px;
+        z-index: 0;
+        width: unset;
+        height: 48px;
+    }
+    .navbar {
+        display: flex;
+    }
 }
 
 @media (max-width: 768px){
     #skillset>div {
         grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
-    }
-}
-
-@media (max-width: 499px){
-    .navbar-collapse {
-        font-size: 1rem;
-    }
-    .home {
-        height: 800px;
-    }
-    h2 {
-        font-size: 1rem;
-    }
-    .bg-text {
-        top: 60%;
     }
 }
