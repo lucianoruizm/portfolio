@@ -50,6 +50,23 @@ p{
     transition: 250ms;
 }
 
+.github-container {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+
+.github-logo {
+    width: 35px;
+    height: 30px;
+}
+
+.github-username {
+    font-size: .9rem;
+    padding: 0;
+    margin: 0;
+}
+
 .checkbox, .icons {
     width: 24px;
     height: 24px;
@@ -83,10 +100,12 @@ p{
 .menu {
     width: 200px;
     padding-left: 0;
+    margin-bottom: 0;
     position: absolute;
-    top: -140px;
+    top: -190px;
     right: 0;
-    z-index: -1;
+    z-index: 1;
+    border: 1px solid #4b4f50;
     transition: 250ms;
 }
 
@@ -108,7 +127,6 @@ p{
 
 .checkbox:checked ~ .menu {
     top: 48px;
-    z-index: 1;
 }
 
 .bg {
@@ -127,7 +145,6 @@ p{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
     width: 80%;
     margin-top: 30px;
     padding: 20px;
@@ -292,6 +309,7 @@ footer {
         z-index: 0;
         width: unset;
         height: 48px;
+        border: none;
     }
     .navbar {
         display: flex;
@@ -301,5 +319,14 @@ footer {
 @media (max-width: 768px){
     #skillset>div {
         grid-template-columns: repeat(auto-fill,minmax(150px, 1fr));
+    }
+    h2 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 320px){
+    .bg-text {
+        top: 55%;
     }
 }
